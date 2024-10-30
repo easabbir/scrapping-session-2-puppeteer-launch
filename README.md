@@ -1,9 +1,6 @@
 # puppeteer-and-launch-easabbir
 
-
 # Puppeteer Launch & Connect
-
-
 
 ### টাস্কসঃ
 
