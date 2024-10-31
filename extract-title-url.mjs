@@ -3,12 +3,12 @@ import puppeteer from 'puppeteer';
 async function extractTitleAndUrl() {
     const browser = await puppeteer.launch({
       headless: true, 
-      //userDataDir: './user_data', // প্রয়োজন অনুযায়ী পরিবর্তন করুন
-      //executablePath: '/path/to/chrome', // আপনার Chrome এর সঠিক পাথ দিন
+      //userDataDir: './user_data',
+      executablePath: '/usr/bin/google-chrome',
     });
   
     const page = await browser.newPage();
-    const url = 'https://example.com'; // আপনার কাঙ্ক্ষিত URL এখানে পরিবর্তন করুন
+    const url = 'https://example.com';
     await page.goto(url);
   
     const title = await page.title();
