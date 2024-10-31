@@ -33,3 +33,20 @@ corepack enable
 corepack prepare pnpm@latest --activate
 
 pnpm i puppeteer
+
+---
+how to check chrome version installed with puppeteer
+ls ~/.cache/puppeteer/chrome
+
+---
+install tsx
+npm -i -g tsx
+
+---
+running puppeteer
+import puppetter from 'puppeteer'
+const browser = puppeteer.launch()
+const page = browser.newpage()
+
+---
+promise and function 
