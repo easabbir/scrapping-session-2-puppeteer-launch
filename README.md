@@ -26,6 +26,13 @@
     1. স্ক্রিপ্ট**:** `connect-browser.mjs` 
     2. `connect-browser.mjs` নামে একটি স্ক্রিপ্ট তৈরি করুন যা `browserWSEndpoint` এবং রিমোট ডিবাগিং পোর্ট ব্যবহার করে একটি ব্রাউজারে সংযুক্ত হবে।
 
+google-chrome --remote-debugging-port=9222 --user-data-dir=./user_data
+    Chrome চালু করার পর, নিচের URL-এ যান:
+
+http://localhost:9222/json
+
+সেখানে আপনি ব্রাউজার এবং তার পৃষ্ঠাগুলোর তথ্য দেখতে পাবেন। webSocketDebuggerUrl এর মানটি খুঁজুন এবং এটি <your-websocket-id> এর স্থানে বসান।
+
 ---
 Learning to install pnpm
 sudo apt update
