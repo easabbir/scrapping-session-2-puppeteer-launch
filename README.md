@@ -25,3 +25,11 @@
 1. একটি স্ক্রিপ্ট তৈরি করুন যা একটি ব্রাউজারে সংযুক্ত হয়
     1. স্ক্রিপ্ট**:** `connect-browser.mjs` 
     2. `connect-browser.mjs` নামে একটি স্ক্রিপ্ট তৈরি করুন যা `browserWSEndpoint` এবং রিমোট ডিবাগিং পোর্ট ব্যবহার করে একটি ব্রাউজারে সংযুক্ত হবে।
+
+---
+Learning to install pnpm
+sudo apt update
+corepack enable
+corepack prepare pnpm@latest --activate
+
+pnpm i puppeteer
