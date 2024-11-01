@@ -1,14 +1,16 @@
 import puppeteer from 'puppeteer';
 
 // here browserWSEndpoint and debugging port will be used
-const browserWSEndpoint = 'ws://localhost:9222/devtools/browser/c9678309-a1ac-49b7-881e-af4b10688475';
+//const browserWSEndpoint = 'ws://localhost:9222/devtools/browser/c9678309-a1ac-49b7-881e-af4b10688475';
 
 // Add browser
 (async () => {
   try {
-    const browser = await puppeteer.connect({
-      browserWSEndpoint,
-    });
+    const endpoint=browser.wsEndpoint();
+    const browser=await puppeteer.connect({
+      browserWSEndpoint:endpoint
+
+    })
     console.log('Browser connected successfully!');
 
     // Do the browser related works
